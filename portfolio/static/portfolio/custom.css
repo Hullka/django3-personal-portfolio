@@ -1,0 +1,99 @@
+/* Общие стили */
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #6c757d;
+}
+
+.navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 1) !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 1rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    border-radius: 1rem;
+}
+
+/* Заголовки */
+#blogtitle {
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#blogdetailtitle {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+#hometext {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Responsive */
+@media (min-width: 992px) {
+    #hometext {
+        font-size: 4rem;
+    }
+
+    #blogdetailtitle {
+        font-size: 5rem;
+    }
+
+    #blogtitle {
+        font-size: 6rem;
+    }
+}
+/* Стили для кастомной кнопки */
+.btn-custom {
+    background-color: #007bff; /* Синий цвет */
+    color: white;
+    border-radius: 30px; /* Округлённые края */
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease; /* Плавный переход при наведении */
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+/* Эффект при наведении */
+.btn-custom:hover {
+    background-color: #0056b3;
+    transform: translateY(-5px); /* Поднимаем кнопку при наведении */
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.4);
+}
+
+/* Иконка слева от текста */
+.btn-custom i {
+    margin-right: 8px;
+}
+
+
